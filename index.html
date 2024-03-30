@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca/"><img src="Screen-Shot-2021-12-01-at-3.21.54-PM.png" height="210" width="200" alt="Logo centennial" id="Headimage"></a>
+        <br>
+        <h1 id="title">Centennial College</h1>
+    </header>
+    <div style="text-align:center">
+        <p id="description">Continuing Education Course/instructor Evaluation </p>
+        <p id="description" >Please read each statement carefully and consider each one individually.</p>
+      </div>
+      <div id="page">
+        <form action="mailto:karmesh217@gmail.com" method="post">
+            <fieldset>
+                <legend>Personal Info:</legend>
+                <p>
+                    <label for="txtFName">First Name:</label>
+                    <input id="txtFName" name="txtFName" size="25" tabindex="1" type="text" required="required">
+                </p>
+                <p>
+                    <label for="txtLName">Last Name:</label>
+                    <input id="txtLName" name="txtLName" size="25" tabindex="1" type="text" required="required">
+                </p>
+                <p>
+                    <label for="txtEmail">Email:</label>
+                    <input id="txtEmail" name="txtEmail" size="30" tabindex="5" type="email" placeholder="someone@gmail.com" required="required">
+                </p>
+               <p>
+                <label for="txtpassword"> Create Password:</label>
+                <input id="txtpassword" name="txtpassword" size="16" tabindex="7" type="text" required="Password">
+            </p>
+            <p>
+                <label for="txtConfirmp"> Confirm Password:</label>
+                <input id="txtConfirmp" name="txtConfirmp" size="16" tabindex="7" type="text" required="Password">
+            </p>
+            <p>
+                <label for="optM">Gender:</label>
+                <input id="optM" name="optGender" tabindex="11" type="radio" value="M">
+                M
+                <input id="optF" name="optGender" tabindex="13" type="radio" value="F">
+                F
+            </p>
+            <p>
+                <label for="txtColor">Favorite color:</label>
+                <input id="txtColor" name="txtColor" size="25" tabindex="14" type="color">
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend>Education Info:</legend>
+            <p>
+                <label for="1stCourses" >Choose Courses:</label>
+                <select name="1stCourses" name="1stCourses" multiple="multiple" size="4" tabindex="35">
+                    <option value="COMP100">COMP100</option>
+                    <option value="COMP125">COMP125</option>
+                    <option value="COMP219">COMP219</option>
+                    <option value="COMP229">COMP229</option>
+                    <option value="GNED500">GNED500</option>
+                </select>
+            </p>
+            <p>
+                <label for="chkOs">Computer knowledge:</label>
+                <input id="chkOs" name="chkOs" tabindex="25" type="checkbox" value="OS">
+                OS
+                <input name="chknet" tabindex="27" type="checkbox" value="Net">
+                Networking
+                <input name="chkProg"  tabindex="29" type="checkbox" value="Prog">
+                Programming
+                <input name="chkWeb"  tabindex="31" type="checkbox" value="Web">
+                Web design
+                <input name="chkDB" tabindex="33" type="checkbox" value="DB">
+                DB
+            </p>
+            <p>
+                <label for="dropdown">Semester: </label>
+                    <select id="dropdown" name="semester" width="30px">
+                        <option value>(Select One)</option>
+                        <option value="1">Spring/summer</option>
+                        <option value="2">Fall</option>
+                        <option value="3">Winter</option>
+                    </select>
+            </p>
+            <p>
+                <label for="txtStartdate">Start Date:</label>
+                <input id="txtStartdate" name="txtStartdate" tabindex="36" type="date">
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend>Instructor</legend>
+                <p>How would you rate the instructor's</p>
+                    <p>
+                        <label for="Knowledge">Knowledgeof subject?&nbsp;<sup>*</sup></label>
+                        <select name="Knowledge" id="Knowledge">
+                            <option value="Select"></option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Not Satisfactory">Not Satisfactory</option>
+                        </select><br><br>
+                    </p>
+                    <p>
+                        <label for="Helpfulness">Helpfulness?&nbsp;<sup>*</sup></label>
+                        <select name="Helpfulness" id="Helpfulness">
+                            <option value="Select"></option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Not Satisfactory">Not Satisfactory</option>
+                        </select><br><br>
+                    </p>
+                  Courtesy and respect for all the students?&nbsp;<sup>*</sup>
+                        <select name="Courtesy" id="Courtesy">
+                            <option value="Select"></option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Not Satisfactory">Not Satisfactory</option>
+                        </select>
+                        <br><br>
+                    <p>
+                        <label for="Comunication">Comunication skills?&nbsp;<sup>*</sup></label>
+                        <select name="Comunication" id="Comunication">
+                            <option value="Select"></option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Not Satisfactory">Not Satisfactory</option>
+                        </select><br><br>
+                    </p>
+                    <p>
+                        <label for="Performance">overall performance?&nbsp;<sup>*</sup></label>
+                        <select name="Performance" id="Performance">
+                            <option value="Select"></option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Not Satisfactory">Not Satisfactory</option>
+                        </select><br>
+                    </p>
+            </fieldset>
+            <fieldset>
+                <legend>General Information</legend> 
+                <p>
+                    Was the course outline reviewed/explained at the beginning of the course?
+                    <br>
+                    <label for="outline" name="outline">
+                        <ol>
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Excellent">
+                            Excellent
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Good">
+                            Good
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Fair">
+                            Fair
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Satisfactory">
+                            Satisfactory
+                        </ol>
+                    </label>
+                </p>
+                <p>
+                    would you recommend this course to a friend with the same interests ?
+                    <br>
+                    <label for="outline" name="outline">
+                        <ol>
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Excellent">
+                            Excellent
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Good">
+                            Good
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Fair">
+                            Fair
+                            <input id="outline" type="radio" required name="outline" class="inline" value="Satisfactory">
+                            Satisfactory
+                        </ol>
+                    </label> 
+                </p>
+                <p>
+                    would you recommend this course to a friend with the same interests ?
+                    <br>
+                    <label for="best-thing">
+                        <textarea id="best-thing" name="best-thing" rows="3" cols="100" placeholder="..."></textarea>
+                    </label> 
+                </p>
+                <br>
+                <br>
+                <p>
+                    would you recommend this course to a friend with the same interests ?
+                    <br>
+                    <label for="best-thing">
+                        <textarea id="best-thing" name="best-thing" rows="3" cols="100" placeholder="..."></textarea>
+                    </label> 
+                </p>
+            </fieldset>
+            <div id="Term-condition" style="text-align:left";>
+                <br>
+                <label for="terms-and-conditions" name="terms-and-conditions">
+                    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="yes"> 
+                </label>
+                I accept the terms and conditions. 
+                <br>
+                <br>
+                <input type="submit" type="submit" value="submit">
+            </div>
+        </form>
+        <footer>
+            <p>
+                <a href="https://www.centennialcollege.ca/continuing_education" target="_blank">Web</a>
+                <a href="mailto:karmesh217@gmail.com" target="_blank">Email</a>
+            </p>
+            <p class="address">
+                <em>Thank you! We pay attention to your feedback!</em>
+            </p>
+        </footer>
+        <hr>
+        <h6>©&nbsp;&nbsp;&nbsp;Copyright Karmesh Patel COMP-213-Winter-2024</h6>
+        <h2>Contact:</h2>
+        <ul>
+            <li>
+                E-mail:
+                <a href="mailto:karmesh217@gmail.com">karmesh217@gmail.com</a>
+            </li>
+            <li>
+            Phone:123-456-7890
+            </li>
+        </ul>
+    </div>    
+</body>
+</html>
